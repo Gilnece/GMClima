@@ -11,3 +11,5 @@
 
 
 projeto ainda se encontra com falha na busca de bandeiras
+
+para visitar o projeto no ar, basta acessar gmclima.rf.gd
