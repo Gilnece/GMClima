@@ -1,0 +1,26 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, #596cee, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    background-color: #596dee26;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+}
