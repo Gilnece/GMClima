@@ -1,91 +1,166 @@
 /* Geral */
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Ubuntu", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
-body{
-    background: linear-gradient(180deg, #596cee, #8dd0f5 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  background: linear-gradient(180deg, rgb(44, 180, 192) 0%, #3ac78a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none !important;
 }
 
-.container{
-    background-color: #596dee26;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2rem;
-    color: #fdfdfd;
-    border-radius: 1rem;
+.container {
+  background-color: #7aed5430;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  color: #fdfdfd;
+  border-radius: 1rem;
+  max-width: 400px;
 }
+
 /* Form */
-
-.form h3{
-    margin-bottom: 1rem;
-}
-.form-input-container{
-    display: flex;
-}
-.form input{
-    padding: 0.8rem;
-    border: none;
-    flex: 1;
-    border-radius: 4px;
+.form h3 {
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
 }
 
-.form button{
-    padding: 0.8rem;
-    min-height: 50px;
-    margin-left: 8px;
-    background-color: #8dd0f5;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.form-input-container {
+  display: flex;
 }
 
-/* clima */
+.form input {
+  padding: 0.8rem;
+  border: none;
+  flex: 1;
+  border-radius: 4px;
+}
 
-#weather-data{
-    border-top: 1px solid #fff;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    text-align: center;
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #8df5916b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
-#weather-data h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.6rem;
+
+/* Clima */
+#weather-data,
+#error-message,
+#loader,
+#suggestions {
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
 }
-#weather-data h2 i{
-    font-size: 1rem;
+
+#weather-data h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
 }
-#weather-data span{
-    margin: 0.6rem;
+
+#weather-data h2 i {
+  font-size: 1rem;
 }
-#country{
-    height: 15px;
+
+#weather-data span {
+  margin: 0.6rem;
 }
-#description-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.6rem 0;
+
+#temperature {
+  font-size: 4rem;
 }
-#details-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#country {
+  height: 15px;
 }
-#details-container #umidity{
-    border-radius: 1px solid #fff;
-    margin: 0.6rem;
-    padding: 0.6rem;
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+#description {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container #umidity {
+  border-right: 1px solid #fff;
+  margin: 0.6rem;
+  padding: 0.6rem;
+}
+
+/* Loader */
+#loader i {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sugestões */
+#suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#suggestions button {
+  min-width: 150px;
+  margin: 0.8rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10rem;
+  border: none;
+  background-color: #ffffff77;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+#suggestions button:hover {
+  opacity: 1;
+}
+.footer {
+  text-align: center;
+  position: absolute;
+  justify-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin-bottom: 10px;
 }
