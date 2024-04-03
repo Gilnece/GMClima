@@ -12,4 +12,4 @@
 
 projeto ainda se encontra com falha na busca de bandeiras
 
-para visitar o projeto no ar, basta acessar http://gmclima.rf.gd
+para visitar o projeto no ar, basta acessar https://gmclima.rf.gd
